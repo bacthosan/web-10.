@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center" id="text_question">{{question}}</h1>
+      <form action="/resultQuestion" method="post">
+        <div class="row text-center" id="btn_answer">
+          <div class="col-md-6">
+            <button type="submit" class="btn btn-danger btn-lg" name="no" value= {{id}} >
+              <span class="glyphicon glyphicon-thumbs-down"></span>
+               Sai / Không / Trái
+             </button>
+          </div>
+          <div class="col-md-6">
+            <button type="submit" class="btn btn-primary btn-lg" name="yes" value= {{id}} >
+              <span class="glyphicon glyphicon-thumbs-up"></span>
+               Đúng / Có / Phải
+             </button>
+          </div>
+        </div>
+      </form>
+      <div class = "row text-center" id="btn_chuyen">
+        <buton class="btn btn-default"><a href="/resultQuestion">Kết quả vote</a></button>
+        <buton class="btn btn-default"><a href="/queston">Câu hỏi khác</a></button>
+      </div>
+    </div>
+
+    <!-- <div class="">
+      <span>Question: {{question}}</span>
+    </div>
+    <form  action="/resultQuestion" method="post">
+      <input type="radio" name = "yes" value= {{id}} >YES<br>
+      <input type="radio" name = "no" value= {{id}} >NO <br>
+      <input type="submit" value="Submit">
+    </form> -->
+  </body>
+</html>

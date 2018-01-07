@@ -1,4 +1,27 @@
-<form method="get" action="/ask">
-    <textarea name="question"></textarea>
-    <input type="submit" value="Gửi"/>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/question" method="post">
+        <h1>Hãy hỏi cộng đồng một câu hỏi đúng/sai hoặc có/không</h1>
+        <textarea class="form-control" maxlength="200" rows="6" id="question" name="question"></textarea>
+        <p class="text-muted" id="counter">Còn 200/200 kí tự</p>
+        <button class="btn btn-primary" type="submit" id="btn_ask">Gửi</button>
+      </form>
+    </div>
+    <!-- <h1> ban muon hoi cau hoi gi </h1>
+    <form  action="/question" method="post">
+      <input type="text" name="question"/>
+      <input type="submit"/> -->
+    </form>
+  </body>
+</html>

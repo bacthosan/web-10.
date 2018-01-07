@@ -1,18 +1,42 @@
+
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Quyết đê</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-    <nav>
-        <a href="/">Trang chủ</a>
-        <a href="/ask">Hỏi</a>
-        <a href="/question">Đáp</a>
-    </nav>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>quyet de</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Quyết.đê!</a>
+          <button data-target="#item" class=" navbar-toggle" data-toggle="collapse">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- <div class="navbar-collapse collapse" id="item">
+          <ul class="nav navbar-nav">
+            <li><a href="/ask">Hỏi nhanh</a></li>
+            <li class="active"><a href="/">Đáp gọn</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+        <div class="navbar-collapse collapse" id="item">
+      <ul class="nav navbar-nav">
+        <li><a href="/ask">Hỏi nhanh</a></li>
+        <li class="active"><a href="/question">Đáp gọn</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
     {{{body}}}
-</body>
+  </body>
 </html>

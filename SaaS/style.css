@@ -1,0 +1,28 @@
+/* selector */
+h1 {
+  /*property */
+  color:red;
+  /* value */
+}
+#secondli{
+  background: #ffff00;
+}
+.firstli{
+  background: rgb(255,255,0);
+}
+.blurred-text{
+  color: rgba(0,0,0,0.8);
+}
+
+[type="text"] {  /* chon theo contribute */
+  border: 1px solid red
+}
+li:hover{ /* trang thai */
+  text-shadow: 1px 1px blue
+}
+a:active{
+  font-weight: bold;
+}
+input:focus{
+  border-radius: 6px;
+}

@@ -1,15 +1,26 @@
 const fs = require('fs');
 
-const writeFileSync = (fileName, data) => {
-    fs.writeFileSync(fileName, data, 'utf-8');
+const readDataFromFile = (filename) => {
+  let data = fs.readFileSync(filename, "utf-8");
+  return JSON.parse(data);
 }
 
-const readFileSync = (fileName) => {
-    return fs.readFileSync(fileName, 'utf-8');
+const writeDataToFile = (filename, data) => {
+  let dataString = JSON.stringify(data);
+  fs.writeFileSync(filename, dataString, "utf-8");
 }
 
-//Export module ra thành 1 object bao gồm 2 function
+const writeDataToFileSync = (filename) => {
+  try {
+    fs.writeFileSync(filename);
+    return true;
+  } catch (ex) {
+    console.log(ex);
+    return false;
+  }
+}
+
 module.exports = {
-    writeFileSync,
-    readFileSync
+  readDataFromFile,
+  writeDataToFile
 }
