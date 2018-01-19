@@ -26,9 +26,14 @@ app.get('/', (req,res) => {
   res.sendFile(__dirname + '/public/index.html')
 });
 
+app.get('/shop', (req,res) => {
+  res.sendFile(__dirname + '/public/html/shopping.html')
+});
+
 app.use(express.static('public'));
 app.use(express.static('css'));
 app.use(express.static('assets'));
+app.use(express.static('html'));
 
 var routes = require('./api/routes/productRoutes'); //importing route
 routes(app); //register the route
